@@ -60,28 +60,31 @@
     </extension>
 </addon>
 
-<addon id="script.module.autocompletion.ce-il" name="AutoCompletion library [coreELEC-IL] (lovepython79)"
-    version="3.0.0" provider-name="Philipp Temminghoff (phil65), (lovepython79) - [coreELEC-IL]">
+<addon id="script.module.autocompletion" name="AutoCompletion library [CoreELEC-IL] (lovepython79)"
+    version="3.0.0" provider-name="Philipp Temminghoff (phil65), (lovepython79) - [CoreELEC-IL]">
     <requires>
+        <!--[coreELEC-IL]-->
+        <!--Removed unused import -->
+        <!--Previous version: 2.24.0-->
         <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" version="2.33.1" />
+        <!--Previous version: 2.9.1 -->
+        <import addon="script.module.requests" version="2.31.0" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Module providing AutoCompletion functions (coreELEC-IL Edition)</summary>
+        <summary lang="en_GB">Module providing AutoCompletion functions (CoreELEC-IL Edition)</summary>
         <description lang="en_GB">
             Module providing AutoCompletion functions for Kodi keyboards.
             Original Author: Philipp Temminghoff (phil65).
-            Modified with Hebrew RTL support and maintained by (lovepython79) for the [coreELEC-IL]
+            Modified with Hebrew RTL support and maintained by (lovepython79) for the [CoreELEC-IL]
             community.
         </description>
-
-        <summary lang="he_IL">מודול השלמה אוטומטית [coreELEC-IL] (lovepython79)</summary>
+        <summary lang="he_IL">מודול השלמה אוטומטית [CoreELEC-IL] (lovepython79)</summary>
         <description lang="he_IL">
             מודול המספק פונקציות להשלמה אוטומטית במקלדות של קודי.
             יוצר מקורי: Philipp Temminghoff (phil65).
             גרסה זו כוללת תיקון RTL (היפוך טקסט) לעברית ותחזוקה על ידי (lovepython79) עבור קהילת
-            [coreELEC-IL].
+            [CoreELEC-IL].
         </description>
 
         <platform>all</platform>
