@@ -60,42 +60,35 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.autocompletion.ce-il"
-    name="AutoCompletion for virtual keyboard (Hebrew) [coreELEC-IL]" version="3.0.0"
-    provider-name="Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn,(lovepython79) - [coreELEC-IL]">
+<addon id="script.module.autocompletion.ce-il" name="AutoCompletion library [coreELEC-IL] (lovepython79)"
+    version="3.0.0" provider-name="Philipp Temminghoff (phil65), (lovepython79) - [coreELEC-IL]">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.autocompletion.ce-il" version="3.0.0" />
+        <import addon="script.module.requests" version="2.33.1" />
     </requires>
-    <extension point="xbmc.python.script" library="plugin.py">
-        <provides>executable</provides>
-    </extension>
+    <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">AutoCompletion for the virtual keyboard (coreELEC-IL Edition)</summary>
+        <summary lang="en_GB">Module providing AutoCompletion functions (coreELEC-IL Edition)</summary>
         <description lang="en_GB">
-            AutoCompletion for the virtual keyboard. Optimized for the [coreELEC-IL] community with
-            Hebrew RTL support.
-            Original Authors: Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn.
-            Hebrew RTL fix and maintenance by (lovepython79) for the [coreELEC-IL] community.
+            Module providing AutoCompletion functions for Kodi keyboards.
+            Original Author: Philipp Temminghoff (phil65).
+            Modified with Hebrew RTL support and maintained by (lovepython79) for the [coreELEC-IL]
+            community.
         </description>
 
-        <summary lang="he_IL">השלמה אוטומטית למקלדת (גרסת coreELEC-IL) (lovepython79)</summary>
+        <summary lang="he_IL">מודול השלמה אוטומטית [coreELEC-IL] (lovepython79)</summary>
         <description lang="he_IL">
-            השלמה אוטומטית למקלדת הווירטואלית.
-            גרסה זו מותאמת למשתמשי [coreELEC-IL] וכוללת תיקון מובנה לבעיית היפוך האותיות (RTL)
-            בתוצאות החיפוש בעברית.
-            יוצרים מקוריים: Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn.
-            תיקון עברית ותחזוקה: (lovepython79) עבור קהילת [coreELEC-IL].
+            מודול המספק פונקציות להשלמה אוטומטית במקלדות של קודי.
+            יוצר מקורי: Philipp Temminghoff (phil65).
+            גרסה זו כוללת תיקון RTL (היפוך טקסט) לעברית ותחזוקה על ידי (lovepython79) עבור קהילת
+            [coreELEC-IL].
         </description>
 
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
         <source>https://github.com/lovepython79/coreelec-il</source>
         <assets>
-            <icon>resources/icon.png</icon>
-            <screenshot>resources/screenshot-01.jpg</screenshot>
-            <screenshot>resources/screenshot-02.jpg</screenshot>
-            <screenshot>resources/screenshot-03.jpg</screenshot>
+            <icon>icon.png</icon>
         </assets>
     </extension>
 </addon>
