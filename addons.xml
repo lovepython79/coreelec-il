@@ -30,6 +30,8 @@
             <provides>executable</provides>
         </extension>
         <extension point="xbmc.addon.metadata">
+            <summary lang="en_GB">AutoCompletion Module [CoreELEC-IL]</summary>
+            <description lang="en_GB">A module providing AutoCompletion functions for Kodi keyboards with RTL support.</description>
             <summary lang="he_IL">השלמה אוטומטית למקלדת (גרסת coreELEC-IL)</summary>
             <description lang="he_IL">השלמה אוטומטית למקלדת הווירטואלית עם תיקון מובנה לבעיית היפוך האותיות (RTL) בחיפוש בעברית.</description>
             <news lang="he_IL">[v3.0.0] הסבה מלאה ל-Python 3, תמיכה ב-Kodi 21 ותיקוני RTL לעברית.</news>
